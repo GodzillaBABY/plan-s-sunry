@@ -1,4 +1,27 @@
-# plan-s-sunry
-一个好用的 Todo List 与任务计划工具，将每日任务、学习路径和进度追踪融入升级闯关体验。并适配移动端和pc
-<img width="1511" height="776" alt="image" src="https://github.com/user-attachments/assets/3235185e-6fb0-4a91-9f28-9cbd90b9520e" />
-  <img width="300" height="600" alt="a74b2451dcd85465912536e2567854b9" src="https://github.com/user-attachments/assets/171b0c8b-e772-4d78-b178-ebc962b0d79c" />
+# Plan S · Sunry
+
+一个好用的 Todo List 与任务计划工具，将每日任务、学习路径和进度追踪融入升级闯关体验。
+
+支持任务拆分、周计划、成果验收、进度百分比、提前完成释放时间，以及22周关卡、每周Boss、经验升级和技能树。当前内置 Sunry 的 AI 全栈学习计划，可在页面中调整任务。
+
+## 使用
+纯 HTML / CSS / JavaScript，无构建依赖。通过任意静态HTTP服务器打开 index.html。
+
+- index.html：页面结构与像素场景
+- app.css：游戏风格与移动布局
+- app.js：任务、验收、经验、关卡及浏览器本地保存
+- plan-data.js：周计划、资源和验收标准
+- legacy.html：完整详细计划
+- practice-kit.zip：Python/TypeScript练习与测试
+
+## Vercel 部署
+导入此仓库，框架选择 Other，根目录为仓库根目录，无需安装或构建。配置见 vercel.json。
+
+## 进度与分享
+进度、笔记和证据保存在当前浏览器 localStorage，不会自动同步到其他设备。通过页面“设置与备份”迁移。
+本仓库不包含个人实际进度或登录凭据。计划内容本身包含个人职业方向，默认以私有仓库存放。
+仓库私有不等于部署网站私有；网站访问权限需在托管平台单独配置。
+
+## 计分
+完成1计划小时获得10 SP；验收通过且填写成果证据后，每计划小时获得100 XP，每200 XP升一级。
+本周所有有预算模块完成验收后击败Boss。撤销记录会同步撤回奖励。
